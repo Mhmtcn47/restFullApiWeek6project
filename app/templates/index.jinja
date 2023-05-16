@@ -1,0 +1,11 @@
+{%extends "base.jinja"%}
+
+{%block content %}
+
+  <h3>instruction</h3>
+  <p>{{play [0]}} {{play[1]}}</p>
+  {%for character in characters%}
+  <p>{{character.title()}}</p>
+  {%endfor%}
+  
+ {%endblock%}
